@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Shorten</title>
+  <link rel="stylesheet" href="/access/apps/Shorten/themes/default.css">
+</head>
+<body>
+
+  <h1>Shorten</h1>
+  <h3>
+    Demon's nation of Realism (256x) - Stage <b id="stage">1</b> of 4
+  </h3>
+  <h6>
+    You are supporting the creators without paying from your wallet 🥰
+  </h6>
+
+  <div class="card">
+    <div class="ad-box">
+        <iframe src="/access/apps/Shorten/ads.html" frameborder="0"></iframe>
+    </div>
+    <button id="continueBtn" disabled>Wait 10s...</button>
+  </div>
+
+  <a href="" id="link"></a>
+
+  <footer>
+    © <span id="year"></span> Shorten. All rights reserved.
+  </footer>
+
+  <script>
+    let link = document.getElementById("link");
+    let stage = document.getElementById("stage");
+    let attempts = 0;
+    if (localStorage.getItem("attempts") != null){
+      attempts = parseInt(localStorage.getItem ("attempts"));
+    }
+    else {
+      localStorage.setItem("attempts", attempts);
+    }
+
+    if (attempts < 3){
+      stage.innerHTML = attempts+1;
+    }
+    else {
+      link.setAttribute ("href", "https://github.com/darkyboys/demon-nation-of-realism-256x/archive/refs/heads/main.zip");
+      link.setAttribute ("download", "Demon's Nation Of Realism (1024x) - Official Mirror.zip");
+      stage.innerHTML = attempts+1;
+      localStorage.setItem ("attempts", 0);
+      attempts = -1;
+    }
+
+    const btn = document.getElementById("continueBtn");
+    const year = document.getElementById("year");
+    year.textContent = new Date().getFullYear();
+
+    let timer = 10;
+    const interval = setInterval(() => {
+      if (timer > 1) {
+        timer--;
+        btn.textContent = `Wait ${timer}s...`;
+      } else {
+        clearInterval(interval);
+        btn.disabled = false;
+        btn.textContent = "Continue";
+      }
+    }, 1500);
+
+    btn.addEventListener("click", () => {
+      // alert("Continue to your shortened link!");
+      // You can redirect here, e.g.:
+      // window.location.href = "2.html";
+      link.click();
+      localStorage.setItem("attempts", attempts+1);
+    });
+  </script>
+
+</body>
+</html>
