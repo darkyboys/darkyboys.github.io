@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>darkyboys • Projects</title>
+	<link rel="stylesheet" href="/css/style.css">
+	<link rel="icon" type="image/png" href="/assets/img/icon.png">
+</head>
+<body>
+
+	<!-- ======== MOBILE MENU TOGGLE ======== -->
+	<input type="checkbox" id="nav-toggle" hidden>
+	<label for="nav-toggle" class="menu-toggle" aria-label="Open menu">
+		<span></span>
+		<span></span>
+		<span></span>
+	</label>
+
+	<!-- ======== HEADER (NAVBAR + SEARCH) ======== -->
+	<header id="home">
+		<nav class="navbar">
+			<div class="logo">darkyboys</div>
+			<ul class="nav-links">
+				<li><a href="/">Home</a></li>
+				<li><a href="/projects">Projects</a></li>
+				<li><a href="/tutorials">Tutorials</a></li>
+				<li><a href="/assets">Assets</a></li>
+				<li><a href="/articles">Articles</a></li>
+				<li><a href="#about">About</a></li>
+			</ul>
+		</nav>
+
+		<!-- Search controls -->
+		<section class="search-section">
+			<input type="text" id="search" placeholder="Search projects…">
+			<select id="search-mode">
+				<option value="title">Title only</option>
+				<option value="both" selected>Title & Description</option>
+			</select>
+			<select id="tag-filter">
+				<option value="all">All tags</option>
+			</select>
+		</section>
+	</header>
+
+	<!-- ======== MOBILE NAV MENU ======== -->
+	<nav class="mobile-nav">
+		<ul>
+			<li><a href="/">Home</a></li>
+			<li><a href="/projects">Projects</a></li>
+			<li><a href="/tutorials">Tutorials</a></li>
+			<li><a href="/articles">Articles</a></li>
+			<li><a href="/assets">Assets</a></li>
+			<li><a href="#about">About</a></li>
+		</ul>
+	</nav>
+
+	<!-- ======== PROJECT LIST ======== -->
+	<main class="project-list">
+		<!-- Example project card -->
+		<div class="project-card" data-tags="game,mods" data-title="Demon Nation Of Realism" data-description="ultra realistic Minecraft texture pack with photorealistic HD textures, PBR, POM, and shader support for Minecraft Java Edition." onclick="window.open('demon-nation-of-realism-1024x/', '_parent')">
+			<img src="demon-nation-of-realism-1024x/icon.webp" alt="Demon Nation Of Realism" class="project-icon">
+			<div class="project-info">
+				<h3>Demon Nation of Realism</h3>
+				<p>ultra realistic Minecraft texture pack with photorealistic HD textures, PBR, POM, and shader support for Minecraft Java Edition.</p>
+				<div class="project-tags">
+					<span>game</span>
+					<span>mods</span>
+				</div>
+			</div>
+		</div>
+
+		<!-- Add more cards as needed -->
+		<div class="project-card" data-tags="game,mods" data-title="Demon Nation Of Realism 512x" data-description="ultra realistic Minecraft texture pack with photorealistic HD textures, PBR, POM, and shader support for Minecraft Java Edition." onclick="window.open('demon-nation-of-realism-512x/', '_parent')">
+			<img src="demon-nation-of-realism-512x/icon.webp" alt="Demon Nation Of Realism" class="project-icon">
+			<div class="project-info">
+				<h3>Demon Nation of Realism - 512x</h3>
+				<p>ultra realistic Minecraft texture pack with photorealistic HD textures, PBR, POM, and shader support for Minecraft Java Edition.</p>
+				<div class="project-tags">
+					<span>game</span>
+					<span>mods</span>
+				</div>
+			</div>
+		</div>
+
+		<div class="project-card" data-tags="game,mods" data-title="Demon Nation Of Realism 256x" data-description="ultra realistic Minecraft texture pack with photorealistic HD textures, PBR, POM, and shader support for Minecraft Java Edition." onclick="window.open('demon-nation-of-realism-256x/', '_parent')">
+			<img src="demon-nation-of-realism-256x/icon.webp" alt="Demon Nation Of Realism" class="project-icon">
+			<div class="project-info">
+				<h3>Demon Nation of Realism - 256x</h3>
+				<p>ultra realistic Minecraft texture pack with photorealistic HD textures, PBR, POM, and shader support for Minecraft Java Edition.</p>
+				<div class="project-tags">
+					<span>game</span>
+					<span>mods</span>
+				</div>
+			</div>
+		</div>
+
+		<div class="project-card" data-tags="game,mods" data-title="Demon Nation Of Realism pbr" data-description="ultra realistic Minecraft texture pack with photorealistic HD textures, PBR, POM, and shader support for Minecraft Java Edition." onclick="window.open('demon-nation-of-realism-pbr/', '_parent')">
+			<img src="demon-nation-of-realism-pbr/icon.webp" alt="Demon Nation Of Realism" class="project-icon">
+			<div class="project-info">
+				<h3>Demon Nation of Realism - pbr</h3>
+				<p>ultra realistic Minecraft texture pack with photorealistic HD textures, PBR, POM, and shader support for Minecraft Java Edition.</p>
+				<div class="project-tags">
+					<span>game</span>
+					<span>mods</span>
+				</div>
+			</div>
+		</div>
+
+		<div class="project-card" data-tags="game,mods" data-title="Demon Nation Of Realism pom" data-description="ultra realistic Minecraft texture pack with photorealistic HD textures, PBR, POM, and shader support for Minecraft Java Edition." onclick="window.open('demon-nation-of-realism-pom/', '_parent')">
+			<img src="demon-nation-of-realism-pom/icon.webp" alt="Demon Nation Of Realism" class="project-icon">
+			<div class="project-info">
+				<h3>Demon Nation of Realism - pom</h3>
+				<p>ultra realistic Minecraft texture pack with photorealistic HD textures, PBR, POM, and shader support for Minecraft Java Edition.</p>
+				<div class="project-tags">
+					<span>game</span>
+					<span>mods</span>
+				</div>
+			</div>
+		</div>
+
+	</main>
+
+	<!-- ======== FOOTER ======== -->
+	<footer>
+		<p>© 2026 darkyboys • All rights reserved.</p>
+		<p>Fully free and open source.</p>
+	</footer>
+
+	<!-- ======== SEARCH FILTER SCRIPT (tiny vanilla JS) ======== -->
+	<script>
+		(() => {
+			const searchInput = document.getElementById('search');
+			const modeSelect = document.getElementById('search-mode');
+			const tagSelect = document.getElementById('tag-filter');
+			const cards = Array.from(document.querySelectorAll('.project-card'));
+
+			// Populate tag filter options based on cards
+			const allTags = new Set();
+			cards.forEach(card => {
+				card.dataset.tags.split(',').forEach(t => allTags.add(t.trim()));
+			});
+			allTags.forEach(tag => {
+				const opt = document.createElement('option');
+				opt.value = tag;
+				opt.textContent = tag;
+				tagSelect.appendChild(opt);
+			});
+
+			function filter() {
+				const query = searchInput.value.trim().toLowerCase();
+				const mode = modeSelect.value; // 'title' or 'both'
+				const selectedTag = tagSelect.value;
+
+				cards.forEach(card => {
+					let matches = true;
+
+					// Tag filtering
+					if (selectedTag !== 'all') {
+						const tags = card.dataset.tags.toLowerCase().split(',').map(t => t.trim());
+						matches = tags.includes(selectedTag);
+					}
+
+					// Search text filtering
+					if (matches && query) {
+						const title = card.dataset.title.toLowerCase();
+						const description = card.dataset.description.toLowerCase();
+						if (mode === 'title') {
+							matches = title.includes(query);
+						} else {
+							matches = title.includes(query) || description.includes(query);
+						}
+					}
+
+					card.style.display = matches ? '' : 'none';
+				});
+			}
+
+			searchInput.addEventListener('input', filter);
+			modeSelect.addEventListener('change', filter);
+			tagSelect.addEventListener('change', filter);
+
+			// Initial filter to populate tag options and show all cards
+			filter();
+		})();
+	</script>
+
+	<script src="/scripts/android.js"></script>
+
+</body>
+</html>
