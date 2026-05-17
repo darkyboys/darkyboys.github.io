@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<urlset xmlns="https://www.sitemaps.org/schemas/sitemap/0.9">
+
+    <url>
+        <loc>https://darkyboys.github.io/</loc>
+    </url>
+
+    <url>
+        <loc>https://darkyboys.github.io/projects</loc>
+    </url>
+
+    <url>
+        <loc>https://darkyboys.github.io/projects/demon-nation-of-realism-1024x</loc>
+    </url>
+
+    <url>
+        <loc>https://darkyboys.github.io/projects/demon-nation-of-realism-512x</loc>
+    </url>
+
+    <url>
+        <loc>https://darkyboys.github.io/projects/demon-nation-of-realism-256x</loc>
+    </url>
+
+    <url>
+        <loc>https://darkyboys.github.io/projects/demon-nation-of-realism-pom</loc>
+    </url>
+
+    <url>
+        <loc>https://darkyboys.github.io/projects/demon-nation-of-realism-pbr</loc>
+    </url>
+
+    <url>
+        <loc>https://darkyboys.github.io/tutorials</loc>
+    </url>
+
+</urlset>

@@ -1,0 +1,491 @@
+/* =========================
+ *  FONT
+ = *======================== */
+@font-face {
+    font-family: "Inter";
+    src: url("/assets/fonts/inter-normal.ttf") format("truetype");
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Inter";
+    src: url("/assets/fonts/inter-italic.ttf") format("truetype");
+    font-weight: 400;
+    font-style: italic;
+}
+
+/* =========================
+ *  DESIGN SYSTEM
+ = *======================== */
+:root {
+    --bg: #070a12;
+    --card: rgba(255,255,255,0.05);
+    --border: rgba(255,255,255,0.08);
+    --text: #eaeaea;
+    --muted: rgba(255,255,255,0.7);
+    --accent1: #7f5af0;
+    --accent2: #2cb67d;
+}
+
+/* =========================
+ *  RESET + BASE
+ = *======================== */
+* {
+    margin: 0px;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* controlled vertical rhythm */
+p, h1, h2, h3, h4, h5, h6, ul, ol {
+    margin-bottom: 20px;
+}
+
+p, ul, ol{
+    margin-top: 20px;
+}
+
+body {
+    font-family: "Inter", ui-sans-serif, system-ui, -apple-system, Arial;
+    color: var(--text);
+    background: radial-gradient(circle at top, #141b2d, #070a12 70%);
+    line-height: 1.7;
+    overflow-x: hidden;
+}
+
+/* =========================
+ *  TYPOGRAPHY
+ = *======================== */
+h1, h2, h3 {
+    letter-spacing: -0.02em;
+}
+
+/* =========================
+ *  NAV
+ = *======================== */
+.nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 22px 40px;
+    gap: 12px;
+}
+
+.logo {
+    font-weight: 700;
+    font-size: 1.2rem;
+}
+
+.nav a {
+    margin: 0 10px;
+    color: #cfd8ff;
+    text-decoration: none;
+    font-size: 0.95rem;
+}
+
+.nav a:hover {
+    color: white;
+}
+
+/* =========================
+ *  LAYOUT
+ = *======================== */
+.container {
+    max-width: 1100px;
+    margin: auto;
+    padding: 0 20px;
+}
+
+/* =========================
+ *  HERO
+ = *======================== */
+.hero {
+    padding: 120px 20px;
+    text-align: center;
+}
+
+.hero-content h1 {
+    font-size: 3rem;
+    letter-spacing: -0.03em;
+}
+
+.hero-content p {
+    margin-top: 18px;
+    max-width: 650px;
+    margin-inline: auto;
+    color: var(--muted);
+}
+
+.hero-buttons {
+    margin-top: 30px;
+    display: flex;
+    justify-content: center;
+    gap: 12px;
+    flex-wrap: wrap;
+}
+
+/* =========================
+ *  BUTTONS (FINAL MERGED)
+ = *======================== */
+.btn-primary {
+    padding: 12px 18px;
+    background: linear-gradient(135deg, var(--accent1), var(--accent2));
+    border-radius: 12px;
+    text-decoration: none;
+    color: white;
+    font-weight: 600;
+}
+
+.btn-secondary {
+    padding: 12px 18px;
+    border: 1px solid var(--border);
+    border-radius: 12px;
+    text-decoration: none;
+    color: white;
+}
+
+/* =========================
+ *  SECTIONS
+ = *======================== */
+.section {
+    padding: 100px 20px;
+}
+
+.section h2 {
+    font-size: 2rem;
+    margin-bottom: 18px;
+}
+
+/* =========================
+ *  GRIDS
+ = *======================== */
+.grid-3 {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 26px;
+    margin-top: 40px;
+}
+
+.grid-2 {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 26px;
+    margin-top: 40px;
+}
+
+/* =========================
+ *  CARDS
+ = *======================== */
+.card,
+.project-card {
+    background: var(--card);
+    border: 1px solid var(--border);
+    border-radius: 18px;
+    padding: 26px;
+    transition: 0.25s ease;
+    color: var(--text);
+    text-decoration: none;
+    backdrop-filter: blur(12px);
+}
+
+.card:hover,
+.project-card:hover {
+    transform: translateY(-8px);
+    border-color: rgba(255,255,255,0.2);
+}
+
+/* =========================
+ *  TAGS (MERGED)
+ = *======================== */
+.tag {
+    display: inline-block;
+    font-size: 0.72rem;
+    padding: 4px 10px;
+    border-radius: 999px;
+    background: rgba(255,255,255,0.04);
+    border: 1px solid rgba(255,255,255,0.08);
+    opacity: 0.85;
+}
+
+/* =========================
+ *  SEARCH
+ = *======================== */
+.search-wrapper {
+    margin: 40px 0;
+}
+
+.search-wrapper input {
+    width: 100%;
+    padding: 14px 16px;
+    border-radius: 12px;
+    border: 1px solid rgba(255,255,255,0.1);
+    background: rgba(255,255,255,0.04);
+    color: white;
+    outline: none;
+}
+
+/* =========================
+ *  TUTORIAL LIST
+ = *======================== */
+.tutorial-list {
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+}
+
+/* FINAL tutorial item (merged overrides) */
+.tutorial-item {
+    display: flex;
+    gap: 18px;
+    align-items: center;
+    padding: 18px;
+    margin-bottom: 14px;
+    border-radius: 16px;
+
+    background: rgba(255,255,255,0.03);
+    border: 1px solid rgba(255,255,255,0.08);
+
+    text-decoration: none;
+    color: white;
+
+    transition: all 0.25s ease;
+}
+
+.tutorial-item:hover {
+    transform: translateY(-6px);
+    border-color: rgba(127, 90, 240, 0.4);
+    background: rgba(127, 90, 240, 0.06);
+    box-shadow: 0 10px 30px rgba(0,0,0,0.4);
+}
+
+ul, ol {
+    list-style: none;
+    padding-left: 0;
+    margin: 0;
+}
+
+/* =========================
+ *  THUMB (FINAL MERGED)
+ = *======================== */
+.thumb {
+    flex: 0 0 170px;
+    width: 250px;
+
+    aspect-ratio: 16 / 9;
+
+    overflow: hidden;
+    border-radius: 12px;
+    border: 1px solid rgba(255,255,255,0.08);
+
+    display: block;
+}
+
+.thumb img {
+    width: 100%;
+    height: 100%;
+
+    display: block;
+    object-fit: cover;
+}
+
+/* =========================
+ *  TUTORIAL THUMB (FIXED)
+ = *======================== */
+
+.tutorial-thumb {
+    flex: 0 0 320px;           /* fixed column width on desktop */
+    width: 320px;
+    max-width: 320px;
+
+    aspect-ratio: 16 / 9;
+    overflow: hidden;
+
+    border-radius: 14px;
+    border: 1px solid rgba(255,255,255,0.08);
+
+    position: relative;
+    background: rgba(255,255,255,0.02);
+}
+
+.tutorial-thumb img {
+    position: absolute;
+    inset: 0;
+
+    width: 100%;
+    height: 100%;
+
+    object-fit: cover;
+
+    display: block;
+}
+
+.tutorial-item:hover .thumb img {
+    transform: scale(1.05);
+}
+
+
+
+
+.tutorial-top {
+    display: flex;
+    gap: 30px;
+    align-items: flex-start;
+    flex-wrap: nowrap;   /* 🔥 prevents dropping under */
+}
+
+.tutorial-thumb {
+    flex: 0 0 320px;
+}
+
+/* =========================
+ *  META
+ = *======================== */
+.meta h3 {
+    margin-bottom: 6px;
+    font-size: 1.1rem;
+}
+
+.meta p {
+    opacity: 0.75;
+    font-size: 0.9rem;
+    margin-bottom: 10px;
+}
+
+/* =========================
+ *  PROJECT
+ = *======================== */
+.project-top {
+    display: flex;
+    gap: 30px;
+    align-items: flex-start;
+    padding: 80px 0;
+}
+
+.project-info {
+    flex: 1;
+}
+
+.project-meta {
+    margin-top: 18px;
+    opacity: 0.85;
+}
+
+.project-meta p {
+    margin-bottom: 6px;
+}
+
+.project-actions {
+    margin-top: 22px;
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+
+.project-content {
+    max-width: 800px;
+    padding: 60px 20px;
+}
+
+.project-content h2 {
+    margin-top: 40px;
+}
+
+.project-content p,
+.project-content ul {
+    margin-top: 10px;
+    opacity: 0.85;
+}
+
+/* =========================
+ *  HIGHLIGHT BOX
+ = *======================== */
+.highlight-box {
+    padding: 50px;
+    border-radius: 18px;
+    text-align: center;
+
+    background: linear-gradient(135deg, rgba(127,90,240,0.2), rgba(44,182,125,0.1));
+    border: 1px solid rgba(255,255,255,0.1);
+}
+
+/* =========================
+ *  FOOTER
+ = *======================== */
+footer {
+    text-align: center;
+    padding: 60px;
+    opacity: 0.5;
+}
+
+/* =========================
+ *  MEDIA QUERIES (MERGED)
+ = *======================== */
+@media (max-width: 768px) {
+
+    .nav {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .hero {
+        padding: 80px 16px;
+    }
+
+    .hero-content h1 {
+        font-size: 2rem;
+    }
+
+    .grid-3,
+    .grid-2 {
+        grid-template-columns: 1fr;
+    }
+
+    .section {
+        padding: 70px 16px;
+    }
+
+    .tutorial-item {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .thumb {
+        width: 100%;
+        flex: none;
+        aspect-ratio: 16 / 9;
+    }
+
+    .thumb img {
+        position: absolute;
+        inset: 0;
+    }
+
+    .project-top {
+        flex-direction: column;
+    }
+
+    .project-actions {
+        flex-direction: column;
+    }
+
+    .btn-primary,
+    .btn-secondary {
+        width: 100%;
+        text-align: center;
+    }
+
+
+    .tutorial-top {
+        flex-direction: column;
+    }
+
+    .tutorial-thumb {
+        width: 100%;
+        max-width: 100%;
+        flex: unset;
+
+        aspect-ratio: 16 / 9;
+    }
+}
